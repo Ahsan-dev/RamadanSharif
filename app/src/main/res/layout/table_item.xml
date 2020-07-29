@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#DDE8F3"
+    android:layout_marginBottom="2dp"
+
+    android:id="@+id/tableItemId">
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="#010911"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rojatextId"
+        android:layout_weight="0.10"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="#010911"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tarikhtextId"
+        android:layout_weight="0.30"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="#010911"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sahritextId"
+        android:layout_weight="0.20"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="#010911"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fozortextId"
+        android:layout_weight="0.20"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="#010911"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/iftartextId"
+        android:layout_weight="0.20"
+        android:gravity="center"
+
+        />
+
+
+</TableRow>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3DC75"
+    android:id="@+id/drawerId"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="খোশ আমদেদ, মাহে রমাদান। "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#060ACF"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="আমাদের পক্ষ থেকে জানাই পবিত্র রমজানুল কারীম এর শুভেচ্ছা ও মুবারকবাদ। "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#080BBD"
+                android:gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="আজঃ "
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="#080BBD"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/todayDateId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="#037008"
+                    android:gravity="center_horizontal"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সময়ঃ "
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="#080BBD"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/presentTimeId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00 "
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="#037008"
+                    android:gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#061594"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সাহরীর শেষ সময়ঃ "
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="#FCFCFD"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/sahriTimeId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00 am"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#FBFBFC"
+                    android:gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:background="#061594"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="আজকের ইফতারঃ "
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="#F5F5F8"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/iftarTimeId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00 am"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#FBFBFC"
+                    android:gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationViewId"
+        android:background="@android:color/white"
+        app:menu="@menu/nev_menu_layout"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nev_header_layout"
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

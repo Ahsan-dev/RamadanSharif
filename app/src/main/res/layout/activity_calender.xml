@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CalenderActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ঢাকা জেলার সাহরী ও ইফতারের সময়সূচীঃ "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#071CCC"
+        android:layout_margin="10dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:orientation="vertical"
+                android:id="@+id/tablelayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#0828EC"
+                    android:id="@+id/tableItemId">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#F8F9FA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rojatextId"
+                        android:layout_weight="0.20"
+                        android:text="রোজাঃ "
+                        android:gravity="center"
+
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        android:text="তারিখঃ "
+                        android:textColor="#F8F9FA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tarikhtextId"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        android:text="সাহরীর শেষ সময়ঃ  "
+                        android:textColor="#F8F9FA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sahritextId"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        android:text="ফজরঃ "
+                        android:textColor="#F8F9FA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fozortextId"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        android:text="ইফতারঃ  "
+                        android:textColor="#F8F9FA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iftartextId"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+
+                        />
+
+
+                </TableRow>
+
+
+
+
+
+            </TableLayout>
+
+
+            <TextView
+                android:textColor="#258"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:text="@string/cautionString"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
